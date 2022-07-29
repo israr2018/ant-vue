@@ -22,13 +22,13 @@
             mode="inline"
             style="height: 100%"
           >
-            <a-menu-item key="1">New Ads</a-menu-item>
-            <a-menu-item key="2">Approved</a-menu-item>
-            <a-menu-item key="3">Pending</a-menu-item>
+            <a-menu-item key="1"><router-link to="/admin/" /> News Ads</a-menu-item>
+            <a-menu-item key="2"><router-link to="/admin/active-ads" />Approved</a-menu-item>
+            <a-menu-item key="3"><router-link to="/admin/pending-ads" />Pending</a-menu-item>
           </a-menu>
         </a-layout-sider>
         <a-layout-content :style="{ padding: '0 24px', minHeight: '280px' }">
-          Content
+          <router-view />
         </a-layout-content>
       </a-layout>
     </a-layout-content>
